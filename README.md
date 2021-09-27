@@ -4,8 +4,6 @@ Simple composable for **Vue.js*** to handle long and ugly CSS class chaining.
 
 **you can use it with any other framework as well*
 
-![https://www.buymeacoffee.com/lukas.borawski](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png  =250x)
-
 ### Install
 
 ---
