@@ -6,6 +6,7 @@
   "module": "lib/index.es.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "prepare": "husky install",
     "build": "rimraf ./lib/ && rollup -c",
     "dev": "rollup -c -w",
     "test": "jest",
@@ -36,10 +37,13 @@
   "devDependencies": {
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-typescript": "^7.15.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@jest/types": "^27.1.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.6",
     "babel-jest": "^27.2.2",
+    "husky": "^7.0.2",
     "jest": "^27.2.2",
     "rollup-plugin-dts": "^4.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
