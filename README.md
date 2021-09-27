@@ -4,6 +4,8 @@ Simple composable for **Vue.js*** to handle long and ugly CSS class chaining.
 
 **you can use it with any other framework as well*
 
+![https://www.buymeacoffee.com/lukas.borawski](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png  =250x)
+
 ### Install
 
 ---
@@ -178,6 +180,12 @@ your base, global and reusable components. It's super easy and convenient. You c
 of course use it with any **other UI System** like for example Boostrap or Vuetify.
 And maybe it was built for vue you can use it for any o**ther frameworks** like React.
 
+--- 
+
+### Demo
+
+Want to check or test it in action? Check out the simple app in the `demo` folder.
+
 ---
 
 **API Reference**: Check out the [types](src/types.d.ts) for API definitions.
@@ -185,4 +193,8 @@ And maybe it was built for vue you can use it for any o**ther frameworks** like 
 **Changelog**: Will be added for the next version.
 
 **Contribution**: Please add Pull Request to introduce some changes or fixes.
+
+**Support**: Want to support? Buy me a coffee.
+
+![https://www.buymeacoffee.com/lukas.borawski](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)
 

@@ -14,3 +14,5 @@ export interface UseVariant {
   defineVariant: typeof DefineVariant
 }
 export type UseVariantReturn = (definitions?: { value: ObjectRecord } | ObjectRecord) => UseVariant
+
+export function useVariant()

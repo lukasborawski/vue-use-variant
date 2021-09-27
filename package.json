@@ -20,7 +20,8 @@
     "vue",
     "vue3",
     "cmposable",
-    "tailwind"
+    "tailwind",
+    "javascript"
   ],
   "author": "lukasborawski",
   "license": "ISC",

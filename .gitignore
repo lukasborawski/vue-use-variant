@@ -95,3 +95,4 @@ sw.*
 **/**/.reify-cache
 
 lib
+.husky/_

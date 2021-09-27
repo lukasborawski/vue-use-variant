@@ -1,2 +1,16 @@
 node_modules
 coverage
+src
+demo
+__tests__
+.husky
+
+.editorconfig
+.idea
+.prettierrc
+babel.config.js
+commitlint.config.js
+jest.config.ts
+rollup.config.ts
+tsconfig.json
+yarn.lock
