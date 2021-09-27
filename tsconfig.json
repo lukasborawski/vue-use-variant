@@ -18,7 +18,7 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node"]
+    "types": ["@types/node", "@jest/types", "@types/mocha"]
   },
   "exclude": ["node_modules"]
 }
