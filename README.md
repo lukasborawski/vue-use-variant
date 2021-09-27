@@ -1,5 +1,7 @@
 ## Vue Use Variant
 
+<a href="https://badge.fury.io/js/vue-use-variant"><img src="https://badge.fury.io/js/vue-use-variant.svg" alt="npm version" height="18"></a>
+
 Simple composable for **Vue.js*** to handle long and ugly CSS class chaining.
 
 **you can use it with any other framework as well*
@@ -192,7 +194,7 @@ Want to check or test it in action? Check out the simple app in the `demo` folde
 
 **Contribution**: Please add Pull Request to introduce some changes or fixes.
 
-**Support**: Want to support? Buy me a coffee.
+**Support**: Want to support? [Buy me a coffee](https://www.buymeacoffee.com/lukas.borawski).
 
-![https://www.buymeacoffee.com/lukas.borawski](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)
+<a href="https://www.buymeacoffee.com/lukas.borawski" target="__blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me a Coffee"></a>
 
