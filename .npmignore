@@ -4,6 +4,7 @@ src
 demo
 __tests__
 .husky
+.github
 
 .editorconfig
 .idea
