@@ -19,9 +19,10 @@
   "keywords": [
     "vue",
     "vue3",
-    "cmposable",
+    "composable",
     "tailwind",
-    "javascript"
+    "javascript",
+    "typescript"
   ],
   "author": "lukasborawski",
   "license": "ISC",
