@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { defineProps, ref, withDefaults } from 'vue'
-import { useVariant } from 'vue-use-variant'
+import { UseVariant, useVariant } from 'vue-use-variant'
 
-const { defineVariant } = useVariant()
+const { defineVariant } = useVariant() as UseVariant
 
 interface Props {
   button?: boolean
