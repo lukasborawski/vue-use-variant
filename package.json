@@ -1,7 +1,7 @@
 {
   "name": "vue-use-variant",
   "version": "0.1.0",
-  "description": "Vue.js style class variant generator. Presented as handy composable.",
+  "description": "Vue.js CSS class variant resolver. Presented as handy composable.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
   "types": "lib/index.d.ts",
