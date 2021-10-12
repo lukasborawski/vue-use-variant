@@ -42,7 +42,7 @@ We all know that systems like [Tailwind](https://tailwindcss.com) are awesome, b
   type="button">Submit</button>
 ```
 
-And this is just a button. Imagine whole markup for even tiny component. 
+... and this is just a button. Imagine whole markup for even tiny component. 
 Readability of it will be - easy talking - not so great. So what **problems** we're facing here:
 
 - very long class definition
@@ -189,8 +189,6 @@ Want to check or test it in action? Check out the simple app in the `demo` folde
 ---
 
 **API Reference**: Check out the [types](src/types.d.ts) for API definitions.
-
-**Changelog**: Will be added for the next version.
 
 **Contribution**: Please add Pull Request to introduce some changes or fixes.
 

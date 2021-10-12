@@ -1,6 +1,6 @@
 {
   "name": "vue-use-variant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue.js CSS class variant resolver. Presented as handy composable.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
