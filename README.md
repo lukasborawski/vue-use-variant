@@ -1,6 +1,6 @@
 ## Vue Use Variant
 
-<a href="https://badge.fury.io/js/vue-use-variant"><img src="https://badge.fury.io/js/vue-use-variant.svg" alt="npm version" height="18"></a>
+<a href="https://badge.fury.io/js/vue-use-variant"><img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&r=r&type=6e&v=0.1.1&x2=0" alt="npm version" height="18"></a>
 
 Simple composable for **Vue.js*** to handle long and ugly CSS class chaining.
 
