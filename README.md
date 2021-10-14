@@ -4,6 +4,8 @@
 
 Simple composable for **Vue.js*** to handle long and ugly CSS class chaining.
 
+Read the story behind this package [here](https://itnext.io/tailwind-class-madness-never-again-75ec6ebfd3a0).
+
 **you can use it with any other framework as well*
 
 ### Install
