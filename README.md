@@ -141,6 +141,25 @@ export default defineComponent({
 </script>
 ```
 
+Use as an Array.
+
+```vue
+<script lang="ts">
+import { buttonVariantsRef } from './variants.ts'
+
+export default defineComponent({
+  name: 'Button',
+  setup() {
+    const { defineVariant } = useVariant() as UseVariant
+
+    return {
+      buttonVariant: defineVariant(['button', 'buttonPrimary'], buttonVariantsRef),
+    }
+  },
+})
+</script>
+```
+
 Use straight without variant definitions.
 
 ```vue
@@ -190,7 +209,7 @@ Want to check or test it in action? Check out the simple app in the `demo` folde
 
 ---
 
-**API Reference**: Check out the [types](src/types.d.ts) for API definitions.
+**API Reference**: Check out the [types](src/types.ts) for API definitions.
 
 **Contribution**: Please add Pull Request to introduce some changes or fixes.
 

@@ -9,29 +9,40 @@ interface Props {
   buttonPrimary?: boolean
 }
 
-const definitions = ref({
-  button: 'button',
-  buttonPrimary: 'px-4 py-2 m-2 rounded text-white bg-blue-600 font-helvetica font-bold hover:opacity-80 transition-all'
-})
 const props = withDefaults(defineProps<Props>(), {
   button: true,
-  buttonPrimary: true
+  buttonPrimary: true,
 })
 
-const variantRegular = defineVariant({
-  button: true,
-  buttonPrimary: true
-}, {
+const definitions = {
   button: 'button',
   buttonPrimary:
-  definitions.value.buttonPrimary
-})
-const variantRef = defineVariant({ button: true, buttonPrimary: true }, definitions)
-const variantProps = defineVariant({ ...props }, definitions)
+    'px-4 py-2 m-2 rounded text-white bg-blue-600 font-helvetica font-bold hover:opacity-80 transition-all',
+}
+const definitionsRef = ref(definitions)
+
+const variantRegularDefinitionsRaw = defineVariant(
+  {
+    button: true,
+    buttonPrimary: true,
+  },
+  {
+    button: 'button',
+    buttonPrimary: definitionsRef.value.buttonPrimary,
+  },
+)
+const variantRefDefinitionsRef = defineVariant(ref({ button: true, buttonPrimary: true }), definitionsRef)
+const variantPropsDefinitionsRef = defineVariant(props as any, definitionsRef)
+const variantArrayDefinitionsRef = defineVariant(['button', 'buttonPrimary'], definitionsRef)
+const variantArrayDefinitionsRaw = defineVariant(['button', 'buttonPrimary'], definitions)
+const variantRefArrayDefinitionsRef = defineVariant(ref(['button', 'buttonPrimary']), definitionsRef)
 </script>
 
 <template>
-  <button :class="variantRegular" type="button">Test Button</button>
-  <button :class="variantRef" type="button">Test Button</button>
-  <button :class="variantProps" type="button">Test Button</button>
+  <button :class="variantRegularDefinitionsRaw" type="button">Test Button</button>
+  <button :class="variantRefDefinitionsRef" type="button">Test Button</button>
+  <button :class="variantPropsDefinitionsRef" type="button">Test Button</button>
+  <button :class="variantArrayDefinitionsRef" type="button">Test Button</button>
+  <button :class="variantArrayDefinitionsRaw" type="button">Test Button</button>
+  <button :class="variantRefArrayDefinitionsRef" type="button">Test Button</button>
 </template>

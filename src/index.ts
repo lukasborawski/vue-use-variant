@@ -1,11 +1,12 @@
-import { DefineVariant, ObjectRecord, UseVariantReturn } from '~/src/types'
+import { DefineVariant, ObjectRecord, UseVariantReturn } from './types'
 
 export const useVariant: UseVariantReturn = (definitions) => {
   const defineVariant: typeof DefineVariant = ($variants, $definitions) => {
-    const _variants = $variants.value || $variants
+    let _variants = ($variants as { value: ObjectRecord | string[] }).value || $variants
     const _definitions = definitions?.value || definitions || $definitions?.value || $definitions || {}
 
     try {
+      if (Array.isArray(_variants)) _variants = Object.fromEntries(_variants.map((key) => [key, true]))
       return Object.keys(_variants)
         .map((key) => {
           if (typeof (_variants as ObjectRecord)[key] === 'object') throw Error()

@@ -3,7 +3,7 @@ import { useVariant } from '~/lib/index.es'
 describe('vue-use-variant', () => {
   const variantsDefinitions = {
     button: 'button-class',
-    buttonPrimary: 'button-class-primary'
+    buttonPrimary: 'button-class-primary',
   }
 
   it('Renders class string with regular configuration', () => {
@@ -30,10 +30,10 @@ describe('vue-use-variant', () => {
       {
         value: {
           button: true,
-          buttonPrimary: true
-        }
+          buttonPrimary: true,
+        },
       },
-      variantsDefinitions
+      variantsDefinitions,
     )
     // @ts-ignore
     expect(variants).toBe('button-class button-class-primary')
@@ -45,6 +45,12 @@ describe('vue-use-variant', () => {
       buttonProp: 'button-class-primary',
     }
     const variants = defineVariant({ ...props }, variantsDefinitions)
+    // @ts-ignore
+    expect(variants).toBe('button-class button-class-primary')
+  })
+  it('Renders class string with an array', () => {
+    const { defineVariant } = useVariant()
+    const variants = defineVariant(['button', 'buttonPrimary'], variantsDefinitions)
     // @ts-ignore
     expect(variants).toBe('button-class button-class-primary')
   })

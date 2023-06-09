@@ -1,6 +1,7 @@
 import pkg from './package.json'
 import typescript from 'rollup-plugin-typescript2'
 import dts from 'rollup-plugin-dts'
+import { terser } from 'rollup-plugin-terser'
 
 export default [
   {
@@ -19,6 +20,7 @@ export default [
     ],
     external: [...Object.keys(pkg.dependencies || {})],
     plugins: [
+      terser(),
       typescript({
         // eslint-disable-next-line global-require
         typescript: require('typescript'),
@@ -26,7 +28,7 @@ export default [
     ],
   },
   {
-    input: 'src/types.d.ts',
+    input: 'src/types.ts',
     output: [{ file: 'lib/index.d.ts', format: 'es' }],
     plugins: [dts()],
   },
