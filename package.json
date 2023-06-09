@@ -1,6 +1,6 @@
 {
   "name": "vue-use-variant",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vue.js CSS class variant resolver. Presented as handy composable.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.es.js",
@@ -12,6 +12,9 @@
     "test": "jest",
     "prepublish": "yarn build"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukasborawski/vue-use-variant.git"
@@ -19,6 +22,8 @@
   "keywords": [
     "vue",
     "vue3",
+    "nuxt",
+    "nuxt3",
     "composable",
     "tailwind",
     "javascript",
@@ -49,6 +54,7 @@
     "rollup": "^2.71.1",
     "rollup-plugin-dts": "^4.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1"
   }

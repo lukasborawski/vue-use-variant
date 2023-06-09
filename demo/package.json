@@ -4,11 +4,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "clean": "rm -rf node_modules"
   },
   "dependencies": {
     "vue": "^3.2.13",
-    "vue-use-variant": "0.1.0"
+    "vue-use-variant": "../"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.0",
